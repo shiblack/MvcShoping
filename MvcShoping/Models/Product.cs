@@ -28,7 +28,7 @@ namespace MvcShoping.Models
 
         [DisplayName("商品颜色")]
         [Required(ErrorMessage = "请选择商品颜色")]
-        public Color color { get; set; }
+        public Color Color { get; set; }
 
         [DisplayName("商品售价")]
         [Required(ErrorMessage = "请输入商品售价")]
