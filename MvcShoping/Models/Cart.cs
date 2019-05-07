@@ -13,5 +13,6 @@ namespace MvcShoping.Models
         [Required]
         public int Amount { get; set; }
 
+
     }
 }
