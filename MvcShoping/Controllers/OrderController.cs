@@ -25,7 +25,7 @@ namespace MvcShoping.Controllers
 
             //TODO:订单完成后必须清空现在的购物车信息
 
-            //TODO:生而为人 不能自大骄傲 也不必妄自菲薄，
+            //TODO:生而为人 不可自大骄傲 也不必妄自菲薄，
 
             //订单完成后返回网站首页
             return RedirectToAction("Index", "Home");

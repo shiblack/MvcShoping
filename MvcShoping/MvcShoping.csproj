@@ -130,6 +130,7 @@
     <Compile Include="Models\Cart.cs" />
     <Compile Include="Models\Member.cs" />
     <Compile Include="Models\MemberLoginViewModel.cs" />
+    <Compile Include="Models\MvcShoppingContext.cs" />
     <Compile Include="Models\OrderDetail.cs" />
     <Compile Include="Models\OrderHeader.cs" />
     <Compile Include="Models\Product.cs" />
@@ -174,11 +175,11 @@
     <Content Include="Views\Home\ProductDetail.cshtml" />
     <Content Include="Views\Member\Register.cshtml" />
     <Content Include="Views\Member\Login.cshtml" />
+    <Content Include="Views\Cart\Index.cshtml" />
+    <Content Include="Views\Order\Complate.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-    <Folder Include="Views\Cart\" />
-    <Folder Include="Views\Order\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="fonts\glyphicons-halflings-regular.woff2" />
