@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 using System.ComponentModel;
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
@@ -15,7 +16,7 @@ namespace MvcShoping.Models
 
         [DisplayName("订购会员")]
         [Required]
-        public Member Member { get; set; }
+        public virtual Member Member { get; set; }
 
         [DisplayName("收件人姓名")]
         [Required(ErrorMessage = "输入收件人姓名")]
@@ -51,5 +52,9 @@ namespace MvcShoping.Models
         {
             get { return this.Member.Name + "于" + this.BuyOn + "订购的商品"; }
         }
+
+        public virtual ICollection<OrderDetail> orderDetail { get; set; }
+
+       
     }
 }

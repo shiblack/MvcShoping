@@ -1,4 +1,6 @@
 ﻿using System;
+using System.Collections;
+using System.Collections.Generic;
 using System.ComponentModel;
 using System.ComponentModel.DataAnnotations;
 using System.Drawing;
@@ -45,5 +47,7 @@ namespace MvcShoping.Models
         [MaxLength(36)]
         [Description("当AuthCode等于 NULL 则代表此会员已经通过Email有效验证")]
         public string AuthCode { get; set; }
+
+        public virtual ICollection<OrderHeader> orders { get; set; }
     }
 }

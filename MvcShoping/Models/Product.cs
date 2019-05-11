@@ -38,5 +38,7 @@ namespace MvcShoping.Models
         [DisplayName("上架时间")]
         [Description("如果不设置上架时间，代表此商品永不上架")]
         public DateTime? PublishOn { get; set; }
+
+        public virtual ProductCategory ProductCategory { get; set; }
     }
 }
